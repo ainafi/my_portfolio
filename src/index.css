@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  /* color type A */
+  --line_color : #555555 ;
+  --back_color : #000000  ;
+
+  /* color type B */
+  /* --line_color : #1b1919 ;
+  --back_color : #E9ECFF  ; */
+
+  /* color type C */
+  /* --line_color : #00135C ;
+  --back_color : #DEFFFA  ; */
+}
+.navbar{
+  transition: .1s ease;
+}
+.navbar:hover{
+  color: #31A499
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button{
+  transition:  all .4s ease;
 }
+.button:hover {
+  background-color: #31A499;
+  color: #fff;
+}
+
+.btn__section{
+  margin-left: -17px;
+}
+
+
+
+
+
