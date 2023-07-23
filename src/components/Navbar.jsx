@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Logo, Menu,Close } from '../assets/images'
+import { motion } from 'framer-motion'
 const Navbar = () => {
   const [toggle, settoggle] = useState(false)
   return (
@@ -19,7 +20,10 @@ const Navbar = () => {
             <img className='w-[30px] mr-6 bg-primary p-1 rounded-full cursor-pointer  z-10 ' src={toggle ? Close: Menu}  alt="" />
           </button>
 
-          <div className={`${!toggle ? 'hidden' : 'flex'} bg-slate-300 shadow-md  text-balck absolute top-[84px] right-[10px] p-5 rounded-[20px] `}>
+          <motion.div 
+          whileInView={{x:[100,0],opacity:[.5,1]}}
+          transition={{duration:0.5 ,ease:'easeIn'}}
+          className={`${!toggle ? 'hidden' : 'flex'} bg-slate-300 shadow-md  text-balck absolute top-[84px] right-[10px] p-5 rounded-[20px] `}>
 
           <ul className='flex flex-col items-center  '>
         
@@ -33,7 +37,7 @@ const Navbar = () => {
        
           </ul>
 
-          </div>
+          </motion.div>
 
         </div>
         

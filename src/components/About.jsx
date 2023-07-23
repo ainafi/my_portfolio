@@ -1,16 +1,25 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import {Heros} from '../assets/images'
 import Button from './Button'
 const About = () => {
   return (
     <section id='about' className='flex flex-col  pb-10 sm:px-10 mt-4 sm:mt-20'>
       <div className=''>
-        <div className='flex items-center justify-center'>
+        <motion.div
+        whileInView={{scale:[1],opacity:[.2,1]}}
+        transition={{duration:1,ease:'easeOut'}}
+         className='flex items-center justify-center'>
             <h3 className='text-secondary text-[30px] sm:text-[45px] font-semibold capitalize'> About me</h3>
-        </div>
+        </motion.div>
 
-        <div className='flex flex-wrap sm:items-start justify-center '>
-            <div className=''>
+        <motion.div
+        whileInView={{x:[100,0],opacity:[.2,1]}}
+        transition={{duration:.9,ease:'easeIn'}}
+         className='flex flex-wrap sm:items-start justify-center '>
+            <div
+            
+            className=''>
                 <img className='w-[440px] h-[743px] object-fill' src={Heros} alt="heros" />
             </div>
             <div className='w-[90%] sm:w-[80%] md:w-[50%] mt-6 pt-4 text-[19px] sm:text-[20px]  '>
@@ -22,7 +31,7 @@ const About = () => {
               </div>
             </div>
 
-        </div>
+        </motion.div>
         
       </div>
       
