@@ -1,4 +1,4 @@
-import { Coding,Responsive,Ui,Reactjs,Tailwind,Redux,Html,Css,Bootstrap,Mui,Python,Figma,RapidApi,Js,Sass,Git } from "../assets/images" 
+import { Coding,Responsive,Ui,Reactjs,Tailwind,Redux,Html,Css,Bootstrap,Mui,Python,Figma,RapidApi,Js,Sass,Git ,Project1,} from "../assets/images" 
 
 export const Services=[
    {
@@ -106,3 +106,16 @@ export const educations=[
       description:'Bacc'
    },
 ]
+
+export const Job = [
+   {
+     name: "hook bank",
+     image: Project1,
+     tech: "React js / Tailwind"
+   },
+   {
+     name: "hook bank",
+     image: Project1,
+     tech: "React js / Tailwind"
+   }
+ ];

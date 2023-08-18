@@ -35,7 +35,15 @@
   margin-left: -17px;
 }
 
-
+.project__name{
+  position: absolute;
+  top: 125px;
+  color: black;
+  font-size: 13px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2px;
+}
 
 
 

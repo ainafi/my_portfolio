@@ -1,0 +1,7 @@
+    position: absolute;
+    top: 125px;
+    color: white;
+    font-size: 13px;
+    background: gray;
+    border-radius: 5px;
+    padding: 2px;
